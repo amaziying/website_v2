@@ -80,10 +80,10 @@ $(window).on('load', function(){
         $(this).find("img").attr("src", "assets/img/closetrefresh.png");
     });
 
-    $('.portfolio-nspireds').mouseenter(function () {
-        $(this).find("img").attr("src", "assets/img/nspiredsHover.png");
+    $('.portfolio-nbtc').mouseenter(function () {
+        $(this).find("img").attr("src", "assets/img/nbtcHover.png");
     }).mouseleave(function () {
-        $(this).find("img").attr("src", "assets/img/nspireds.png");
+        $(this).find("img").attr("src", "assets/img/nbtc.png");
     });
 
     $('.portfolio-pebblerunner').mouseenter(function () {
