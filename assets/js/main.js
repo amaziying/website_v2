@@ -73,22 +73,4 @@ $(window).on('load', function(){
       e.preventDefault()
       $(this).tab('show')
     });
-
-    $('.portfolio-closetrefresh').mouseenter(function () {
-        $(this).find("img").attr("src", "assets/img/closetrefreshHover.png");
-    }).mouseleave(function () {
-        $(this).find("img").attr("src", "assets/img/closetrefresh.png");
-    });
-
-    $('.portfolio-nbtc').mouseenter(function () {
-        $(this).find("img").attr("src", "assets/img/nbtcHover.png");
-    }).mouseleave(function () {
-        $(this).find("img").attr("src", "assets/img/nbtc.png");
-    });
-
-    $('.portfolio-pebblerunner').mouseenter(function () {
-        $(this).find("img").attr("src", "assets/img/pebblerunnerHover.png");
-    }).mouseleave(function () {
-        $(this).find("img").attr("src", "assets/img/pebblerunner.png");
-    });
 });
