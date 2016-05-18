@@ -1,9 +1,10 @@
 $(window).on('load', function(){
     $("#loading-spinner").remove();
     $(".container").addClass("load");
-    var lastMove = 0;
+
     var orderedTabs = ["about", "resume", "portfolio", "contact"];
     var bindScroll = function () {
+        var lastMove = 0;
         $('.w').on('DOMMouseScroll', function (e) {
             if (Date.now() - lastMove > 500) {
                 var activeTab = $(".active")[1].id;
@@ -16,7 +17,7 @@ $(window).on('load', function(){
                         }
                     });
                 } else {
-                    //scroll down
+                    //scroll up
                     orderedTabs.forEach(function (name, idx) {
                         if (activeTab === name && idx !== 0) {
                             var nextTab = idx - 1;
