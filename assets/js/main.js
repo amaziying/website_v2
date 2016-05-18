@@ -59,6 +59,10 @@ $(window).on('load', function(){
     };
     bindScroll();
      //Firefox
+    $('a[opentab]').click(function (e) {
+        e.preventDefault();
+        $('a[href="#' + e.target.attributes[0].value + '"]').tab("show");   
+    });
 
     $(window).resize(function () {
         if ($(window).width() > 992) {
