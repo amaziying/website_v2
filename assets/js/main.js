@@ -2,7 +2,7 @@ $(window).on('load', function(){
     $("#loading-spinner").remove();
     $(".container").addClass("load");
 
-    var orderedTabs = ["about", "resume", "portfolio"];
+    var orderedTabs = ["about", "resume", "portfolio", "contact"];
     var bindScroll = function () {
         var lastMove = 0;
         $('.w').on('DOMMouseScroll', function (e) {
